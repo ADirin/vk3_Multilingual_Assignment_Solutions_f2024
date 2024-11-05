@@ -22,7 +22,7 @@ public class DatabaseUtil {
         }
     }
 
-    private static final String URL = "jdbc:mysql://localhost:3306/multilingualproducts";
+    private static final String URL = "jdbc:mysql://localhost:3306/multilingual_products";
     private static final String USER = properties.getProperty("DB_USER");
     private static final String PASSWORD = properties.getProperty("DB_PASSWORD");
 

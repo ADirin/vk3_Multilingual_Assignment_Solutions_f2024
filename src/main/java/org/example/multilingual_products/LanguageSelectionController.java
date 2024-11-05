@@ -67,7 +67,7 @@ public class LanguageSelectionController {
     @FXML
     private void onLoadProducts() {
         String languageCode = getLanguageCode(languageComboBox.getValue());
-        String tableName = "product_" + languageCode;
+        String tableName = "products_" + languageCode;
         System.out.println("Loading products from table: " + tableName);
         loadProducts(tableName);
     }
@@ -76,7 +76,7 @@ public class LanguageSelectionController {
     private void onAddProduct() {
         String selectedLanguage = languageComboBox.getValue();
         String languageCode = getLanguageCode(selectedLanguage);
-        String tableName = "product_" + languageCode;
+        String tableName = "products_" + languageCode;
 
         try {
             String name = nameField.getText();
